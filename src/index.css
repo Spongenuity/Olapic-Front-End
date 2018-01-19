@@ -19,7 +19,7 @@ body {
   min-width: 0;
 }
 
-#slide-img img {
+#slide-img-main {
   position: absolute;
   top: 0;
   left: 0;

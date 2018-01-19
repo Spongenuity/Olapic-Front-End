@@ -153,15 +153,29 @@ Appendix to your responses.
 
 **Client Response:**
 ```
-This is my answer
+Hi,
+
+After looking through the sample you have sent, I can see that you are using an ampersand (&) written as an unescaped character in 2 places:
+
+<Name>Awesome Possum T-shirt & Shorts Red</Name> - Line 79
+
+<Description>This is an example description of my Awesome Possum T-shirt Shorts</Description> - Line 83
+
+As per our documentation, these characters must be written in an escaped format so & would be &amp;
+
+I have also noticed that there is a '<CategoryID />' closing tag with to opening on line 84
+
+With those minor changes made, I think you should have everything up and running.
+
+Thanks
 ```
 
 **Rationale/Sources:**
 ```
-Here are my sources
+Looked through documentation and the xml.
 ```
 
 **Issues Caught:**
 ```
-Issues Caught
+Unescaped character and random tag.
 ```
