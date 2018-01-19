@@ -1,6 +1,6 @@
 ## Front-End Test
 
-The front end UGC app can be seen [here](http://www.demandware.com/link-marketplace/olapic)
+The front end UGC app can be seen [here](https://olapic-test.herokuapp.com/)
 
 #
 
