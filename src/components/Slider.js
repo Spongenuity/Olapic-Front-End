@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
+import { Image, Modal } from 'semantic-ui-react'
 import Slider from 'react-slick'
 import { connect } from 'react-redux';
 import { getPhotos } from '../actions';
 import axios from 'axios';
-import { Button, Header, Image, Modal } from 'semantic-ui-react'
+
 
 
 const url = "https://photorankapi-a.akamaihd.net/customers/215757/media/recent/"
@@ -94,18 +95,17 @@ class OlaSlider extends Component {
         
         return (
         
-      <div id="flex-contain" > 
-          <Slider  {...settings}>
-            {/* <div id="flex-wrapper" > */}
-              {this.state.posts.map(post =>
-            <div key={post} id="slide-img">
-                <img key={post} src={post} id="slide-img-main"/>
-                <Modal trigger={<img key={post} src={post}/>}>
-                    <Modal.Content image>
-                        <Image fluid wrapped centered size='fullscreen' src={post} />
-                    </Modal.Content>
-                </Modal>
-            </div>
+    <div id="flex-contain" > 
+        <Slider  {...settings}>
+        {/* <div id="flex-wrapper" > */}
+            {this.state.posts.map(post =>
+        <div key={post} id="slide-img">
+            <Modal trigger={<img key={post} src={post} id="slide-img-main"/>}>
+                <Modal.Content image>
+                    <Image fluid wrapped centered size='fullscreen' src={post} />
+                </Modal.Content>
+            </Modal>
+        </div>
 
 
               )}
